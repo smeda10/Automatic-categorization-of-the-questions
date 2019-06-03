@@ -1,8 +1,4 @@
-SELECT * FROM posts WHERE Id < 60000
+SELECT * FROM posts WHERE (Score + CommentCount >= 8) AND Id < 280000);
+SELECT * FROM posts WHERE (Score + CommentCount >= 8) AND (Id >= 280000 AND Id < 500000);
+SELECT * FROM posts WHERE (Score + CommentCount >= 8) AND (Id >= 500000 AND Id < 750000);
 
-SELECT * FROM posts WHERE (Id >= 60000 AND Id < 120000)
-
-SELECT * FROM posts WHERE (Id >= 120000 AND Id < 180000)
-SELECT * FROM posts WHERE (Id >= 180000 AND Id < 240000)
-SELECT * FROM posts WHERE (Id >= 240000 AND Id < 300000)
-SELECT * FROM posts WHERE (Id >= 300000 AND Id < 360000)
